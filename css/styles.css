@@ -16,6 +16,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--body-color);
@@ -64,6 +68,9 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+.page-header {
+  border-bottom: 1px solid var(--accent-color);
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -80,7 +87,7 @@ img {
 .primary-nav .list-nav:not(:last-child) {
   margin-right: 40px;
 }
-.primary-nav .list-nav:first-child {
+.primary-nav {
   margin-left: 76px;
 }
 .contacts-nav {
@@ -93,6 +100,10 @@ img {
 }
 .address .add-list + .add-list {
   margin-left: 40px;
+}
+.add-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .button-order {
@@ -144,23 +155,31 @@ img {
 .solutions {
   font-weight: 700;
   font-size: 56px;
+  max-width: 496px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--body-color);
   text-align: center;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
 .hero {
   background-color: var(--overlays-shadow-color);
   text-align: center;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .main-section {
-  padding-top: 63px;
+  padding-top: 120px;
 }
 .main-title .main-element:not(:last-child) {
   margin-right: 24px;
 }
 .main-element {
   display: block;
+  width: calc((100% -72px) / 3);
 }
 .main-part {
   font-weight: 500;
@@ -182,6 +201,7 @@ img {
 }
 .section-actions {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .name-list {
   font-weight: 700;
@@ -196,7 +216,8 @@ img {
   margin-right: 24px;
 }
 .our-employees {
-  padding-top: 88px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--light-color);
 }
 .team-card {
@@ -210,23 +231,22 @@ img {
   height: 380px;
   background-color: var(--body-color);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 120px;
+}
+.container-team {
+  padding: 32px 16px;
+  flex-direction: column;
+  justify-content: center;
 }
 .team-card {
-  padding-top: 32px;
   text-align: center;
   margin: auto;
 }
 .card-description {
-  padding-bottom: 32px;
   text-align: center;
   margin-top: 8px;
 }
 .team-cont .card-background:not(:last-child) {
   margin-right: 24px;
-}
-.container-team {
-  padding-bottom: 120px;
 }
 .apps-card {
   border: 1px solid var(--accent-color);
@@ -243,6 +263,7 @@ img {
 }
 .footer-title {
   background-color: var(--overlays-shadow-color);
+  padding: 100px 0px;
 }
 .footer-link {
   display: flex;
