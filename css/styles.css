@@ -101,9 +101,11 @@ img {
 .address .add-list + .add-list {
   margin-left: 40px;
 }
+
 .add-list {
   padding-top: 24px;
   padding-bottom: 24px;
+  width: 153px;
 }
 
 .button-order {
@@ -229,13 +231,20 @@ img {
 }
 .card-background {
   height: 380px;
+  width: calc((100%-82px) / 4);
   background-color: var(--body-color);
   border-radius: 0px 0px 4px 4px;
-}
-.container-team {
-  padding: 32px 16px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.container-team {
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 16px;
 }
 .team-card {
   text-align: center;
@@ -259,7 +268,6 @@ img {
   color: var(--accent-color);
   background-color: var(--overlays-shadow-color);
   display: flex;
-  margin-left: 156px;
 }
 .footer-title {
   background-color: var(--overlays-shadow-color);
@@ -267,7 +275,6 @@ img {
 }
 .footer-link {
   display: flex;
-  margin-left: 156px;
   margin-bottom: 16px;
 }
 .logo-part {
@@ -283,7 +290,6 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid var(--accent-color);
-  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -295,29 +301,29 @@ img {
   color: var(--body-color);
   background-color: var(--pressed-state);
 }
-.container-card {
-  width: 1128px;
-  padding-left: 14px;
-  padding-right: 14px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.button-element {
-  display: block;
+.container-element {
+  padding: 32px 0px;
 }
 .primary-button .button-element:not(:last-child) {
   margin-right: 24px;
 }
-.flex-container .flex-element {
+.primary-button {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.flex-container .flex-element:not(:last-child) {
+  margin-bottom: 48px;
+}
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
-  margin-left: -24px;
+  margin-right: -24px;
   margin-top: -48px;
 }
 .flex-element {
   width: 360px;
   margin-right: 24px;
+  margin-bottom: 48px;
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
@@ -326,8 +332,23 @@ img {
   color: var(--body-color);
   background-color: var(--pressed-state);
   margin: auto;
-  padding: auto;
 }
 .link-nav {
   color: var(--pressed-state);
+}
+.section-card {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
 }
