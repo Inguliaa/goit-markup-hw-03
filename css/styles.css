@@ -97,10 +97,6 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.address {
-  justify-content: flex-end;
-  margin: auto;
-}
 .address .add-list + .add-list {
   margin-left: 40px;
 }
