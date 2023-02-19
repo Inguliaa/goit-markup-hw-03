@@ -219,7 +219,11 @@ img {
   padding-bottom: 120px;
   background-color: var(--light-color);
 }
-.team-card {
+.team-employees {
+  margin: auto;
+  text-align: center;
+}
+.team-card.team-employees {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -236,6 +240,7 @@ img {
 .container-team {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 32px 16px;
 }
 .card-description {
